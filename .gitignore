@@ -1,2 +1,52 @@
-fuel/app/logs/*/*/*
-fuel/app/cache/*/*
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8" />
+
+	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Calculo de vencimiento</title>
+		
+	</head>
+
+	<body>
+		
+		<center>
+			<h1>Calculo de vencimientos</h1>
+			
+		<hr />
+		<form action='calcula.php' method="post">
+			<table>
+				<tr>
+					<td align="right">Importe</td>
+					<td><input type="text" name="importe"/>
+						
+					</td>
+				</tr>
+				<tr>
+					<td align="right">Entrada</td>
+					<td><input type="text" name="entrada" /></td>
+				</tr>
+				<tr>
+				<td align="right">Numero de pagos</td>
+				<td> <input type="text" name="numero_pagos" /></td>
+			</tr>
+				<tr>
+				<td align="right">Primer vencimiento</td>
+				<td> <input type="text" name="fecha1" value="mm/dd/yy" >
+					(fornato mm/dd/yy)
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit"value="calcular" /></td>
+					</tr>
+			
+				
+			</table>
+			
+		</form>
+		</center>
+	</body>
+</html>
